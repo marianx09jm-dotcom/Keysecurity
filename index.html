@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Security</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --beige: #FBF6F4;
+      --pink: #EEC9CC;
+      --brown: #4A3838;
+      --card: #fff;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--beige);
+      color: var(--brown);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header img {
+      width: 130px;
+      height: auto;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--brown);
+      margin-top: 12px;
+    }
+
+    nav {
+      background: var(--pink);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--brown);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: var(--brown);
+      color: #fff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--brown);
+      border-bottom: 3px solid var(--pink);
+      display: inline-block;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+    }
+
+    p, li { font-size: 15px; }
+
+    ul { margin-left: 20px; }
+
+    .upload-box {
+      border: 2px dashed var(--pink);
+      padding: 14px;
+      border-radius: 10px;
+      background: rgba(238, 201, 204, 0.1);
+    }
+
+    input[type=file] {
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--pink);
+      color: var(--brown);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-key.png" alt="Logo Key Security">
+    <h1>Key Security</h1>
+    <p>Llaveros inteligentes artesanales con tecnología IoT</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#mision">Misión y Visión</a>
+    <a href="#problema">Justificación</a>
+    <a href="#propuesta">Propuesta</a>
+    <a href="#dispositivo">Dispositivo</a>
+    <a href="#documentos">Documentos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio">
+      <h2>Introducción</h2>
+      <p>Key Security es un emprendimiento que combina el arte del crochet con la tecnología IoT para crear llaveros inteligentes que permiten localizar objetos personales en tiempo real. Unimos diseño, seguridad y comodidad en un solo producto.</p>
+    </section>
+
+    <!-- MISION Y VISION -->
+    <section id="mision">
+      <h2>Misión, Visión, Valores y Objetivo</h2>
+      <p><strong>Misión:</strong> Desarrollar dispositivos inteligentes que fusionen arte artesanal con tecnología, brindando comodidad y seguridad.</p>
+      <p><strong>Visión:</strong> Ser reconocidos como líderes en innovación artesanal tecnológica sostenible.</p>
+      <p><strong>Valores:</strong></p>
+      <ul>
+        <li>Innovación</li>
+        <li>Compromiso</li>
+        <li>Calidad</li>
+        <li>Responsabilidad</li>
+        <li>Sostenibilidad</li>
+      </ul>
+      <p><strong>Objetivo general:</strong> Crear llaveros inteligentes artesanales con diseño personalizado y tecnología IoT.</p>
+    </section>
+
+    <!-- PROBLEMA Y JUSTIFICACION -->
+    <section id="problema">
+      <h2>Pregunta Problema y Justificación</h2>
+      <p><strong>Pregunta problema:</strong> ¿Cómo integrar el arte artesanal con la tecnología IoT para brindar seguridad y estilo?</p>
+      <p><strong>Justificación:</strong> Este proyecto responde a la necesidad de localizar objetos personales de forma eficiente, fusionando tradición artesanal con tecnología moderna.</p>
+    </section>
+
+    <!-- PROPUESTA -->
+    <section id="propuesta">
+      <h2>Propuesta de valor, Público objetivo y Diferenciación</h2>
+      <p><strong>Propuesta de valor:</strong> Llaveros inteligentes hechos a crochet con tecnología GPS que permiten ubicar tus pertenencias desde una app.</p>
+      <p><strong>Público objetivo:</strong> Personas que valoran el diseño artesanal y la seguridad tecnológica.</p>
+      <p><strong>Diferenciación:</strong> Fusionamos lo artesanal y la innovación IoT con un enfoque ecológico y personalizado.</p>
+    </section>
+
+    <!-- DISPOSITIVO -->
+    <section id="dispositivo">
+      <h2>Dispositivo</h2>
+      <p>El dispositivo incorpora un microcontrolador con módulo GPS y conectividad IoT que se comunica con una app móvil para rastreo y alertas.</p>
+      <div class="upload-box">
+        <p><strong>Sube aquí tus planos o diagramas del dispositivo:</strong></p>
+        <input type="file" multiple>
+      </div>
+    </section>
+
+    <!-- DOCUMENTOS -->
+    <section id="documentos">
+      <h2>Materia prima y documentos</h2>
+      <p>Usamos materiales como hilo de algodón, sensores electrónicos de bajo consumo y componentes reciclables.</p>
+      <div class="upload-box">
+        <p><strong>Sube los documentos de tu empresa:</strong></p>
+        <label>RIT: <input type="file" accept=".pdf"></label><br>
+        <label>RUT: <input type="file" accept=".pdf"></label><br>
+        <label>Acta de constitución: <input type="file" accept=".pdf"></label><br>
+        <label>Plano 3D: <input type="file" accept=".pdf,.jpg,.png,.stl"></label>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Correo:</strong> keysecurity@gmail.com</p>
+      <p><strong>Teléfono:</strong> (+57) 322 820 7643</p>
+      <p><strong>Ubicación:</strong> Cajicá, Cundinamarca, Colombia</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Key Security — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
